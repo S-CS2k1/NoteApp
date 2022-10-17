@@ -25,6 +25,7 @@ function App() {
 
   const checkSession = async (w, s)=>{
     let rt = false;
+    console.log(localStorage.getItem("token"));
     await axios({
       method : "post",
       url : "https://css-note-app.herokuapp.com/",
