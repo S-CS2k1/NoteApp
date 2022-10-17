@@ -34,6 +34,7 @@ function App() {
     .then((ob)=>{
       if(ob.data.message){
         setShow(w);
+        console.log(show);
         setCaption(s);
         rt = true;
       }else{
