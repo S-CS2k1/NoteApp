@@ -32,6 +32,7 @@ function App() {
       data : {}
     })
     .then((ob)=>{
+      console.log(ob.data);
       if(ob.data.message){
         setShow(w);
         console.log(show);
