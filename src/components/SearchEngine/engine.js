@@ -25,7 +25,7 @@ const Engine = (prop)=>{
 
     useEffect(()=>{
         if(searchText.length > 0){
-            axios.get(`/searchNote?q=${searchText}`)
+            axios.get(`https://css-note-app.herokuapp.com/searchNote?q=${searchText}`)
             .then((ob)=>{
                 console.log(ob.data);
                 setResult(ob.data.d);

@@ -38,7 +38,7 @@ const Result = ({res})=>{
         setLoad('a sec.....');
         await axios({
             method : 'post',
-            url : '/updateNote',
+            url : 'https://css-note-app.herokuapp.com/updateNote',
             headers : {},
             data : {
                 id : `${res._id}`,

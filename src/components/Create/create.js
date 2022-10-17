@@ -47,7 +47,7 @@ const Create = (prop)=>{
         setLoad('a sec.....');
         await axios({
             method : 'post',
-            url : '/newNote',
+            url : 'https://css-note-app.herokuapp.com/newNote',
             headers : {},
             data : {
                 title : `${Title}`,

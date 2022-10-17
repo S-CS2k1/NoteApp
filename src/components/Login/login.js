@@ -14,7 +14,7 @@ const Login = (prop)=>{
         const fetchData = async()=>{
             await axios({
                 method: "post",
-                url: "/login",
+                url: "https://css-note-app.herokuapp.com/login",
                 headers: {},
                 data: {
                     e : `${email}`,

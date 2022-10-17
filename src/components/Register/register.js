@@ -20,7 +20,7 @@ const Register = (prop)=>{
             await axios({
                 method : "post",
                 header : {},
-                url : "/register",
+                url : "https://css-note-app.herokuapp.com/register",
                 data : {
                     user : `${username}`,
                     email : `${email}`,
