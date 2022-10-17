@@ -27,7 +27,7 @@ function App() {
     let rt = false;
     await axios({
       method : "post",
-      url : "https://css-note-app.herokuapp.com/",
+      url : "/",
       headers : {},
       data : {}
     })
