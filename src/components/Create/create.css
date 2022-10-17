@@ -1,0 +1,72 @@
+.create{
+    width: 45vw;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 25px;
+    position: relative;
+    /* box-shadow: 2px 1px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+input, textarea, textarea:focus{
+    background-color: white;
+    border: none;
+}
+
+.create input{
+    border-bottom: 1px solid black;
+    font-weight: 600 !important;
+    font-size: 1em !important;
+    width: 90%;
+}
+
+.create input:focus{
+    border-bottom: 1px solid black;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+textarea{
+    font-size: 60% !important;
+    font-weight: 300;
+}
+
+.create textarea:focus{
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+button{
+    border-radius: 25px !important;
+}
+
+.create svg{
+    margin-bottom: 0.15em !important;
+    margin-left: 2em !important;
+    cursor: pointer;
+    width: 1em;
+}
+
+.noteFooter span{
+    font-size: 0.5em;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+@media screen and (max-width: 425px){
+    .create{
+        width: 70vw;
+        height: 50vh;
+        font-size: 0.8em !important;
+    }
+
+    .create button{
+        width: 5em !important;
+    }
+}

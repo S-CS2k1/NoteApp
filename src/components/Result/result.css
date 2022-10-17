@@ -1,0 +1,104 @@
+.result{
+    width: 30vw;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 25px;
+    position: relative;
+    /* box-shadow: 2px 1px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+input, textarea, textarea:focus{
+    background-color: white;
+    border: none;
+}
+
+.result input{
+    border-bottom: 1px solid black;
+    font-weight: 600 !important;
+    font-size: 0.7em !important;
+    width: 95% !important;
+    height: 15%;
+}
+
+.result input:focus{
+    border-bottom: 1px solid black;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+textarea{
+    font-size: 55% !important;
+    font-weight: 300;
+    width: 95% !important;
+    height: 40% !important;
+}
+
+.result textarea:focus{
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.result button{
+    width: 10em !important;
+    border-radius: 25px !important;
+}
+
+.result svg{
+    margin-bottom: 0.15em !important;
+    margin-left: 1em !important;
+    cursor: pointer;
+    width: 1em;
+}
+
+
+.resultFooter span{
+    font-size: 0.5em;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}
+
+@media screen and (max-width: 800px){
+    .result{
+        width: 95%;
+        height: 95%;
+    }
+
+    .result button{
+        width: 15em !important;
+        margin-left: -1.5em !important;
+    }
+
+    textarea{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .resultFooter svg{
+        margin: 0 !important;
+        margin-left: 0.5em !important;
+    }
+    .resultFooter button{
+        width: 5em !important;
+        margin-left: -0.5em !important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .result button{
+        width: 7em !important;
+        margin-bottom: 0.8em !important;
+    }
+
+    .result textarea{
+        width: 95% !important;
+        height: 35% !important;
+    }
+}

@@ -1,0 +1,50 @@
+.register{
+    width: 45vw;
+    height: 75vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    position: relative;
+    /* box-shadow: 2px 1px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.register input{
+    width: 70%;
+    font-size: 0.7em !important;
+    font-weight: 300;
+    border-bottom: 1.5px solid black;
+}
+
+.createAccount a{
+    font-size: 60% !important;
+    font-weight: 300;
+    text-decoration: none !important;
+}
+
+button{
+    width: 70% !important;
+}
+
+button:hover{
+    color: white;
+}
+
+.register span{
+    color: black;
+    font-size: 0.6em !important;
+}
+
+.err{
+    position: absolute;
+    top: 54%;
+    left: 80%;
+}
+
+p{
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
