@@ -28,7 +28,6 @@ function App() {
     await axios({
       method : "post",
       url : "https://css-note-app.herokuapp.com/",
-      headers : {},
       data : {}
     })
     .then((ob)=>{
