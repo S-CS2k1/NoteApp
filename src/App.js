@@ -26,10 +26,10 @@ function App() {
   const checkSession = async (w, s)=>{
     let rt = false;
     console.log(localStorage.getItem("token"));
-    axios.defaults.withCredentials = true;
     await axios({
       method : "post",
       url : "https://css-note-app.herokuapp.com/",
+      withCredentials: true,
       data : {}
     })
     .then((ob)=>{
