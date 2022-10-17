@@ -49,6 +49,9 @@ function App() {
         rt = false;
       }
     })
+    .catch((ob)=>{
+      console.log(ob);
+    })
   }
 
   const RenderHome = (CountSet, count)=>{
