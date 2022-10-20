@@ -15,7 +15,12 @@ const Login = (prop)=>{
             await axios({
                 method: "post",
                 url: "https://css-note-app.herokuapp.com/login",
-                headers: {},
+                headers: {
+                    "Access-Control-Allow-Origin" : "https://css-note-app.herokuapp.com",
+                    "Access-Control-Allow-Credentials" : true,
+                    "Content-Type" : "application/json"
+                },
+                withCredentials: true,
                 data: {
                     e : `${email}`,
                     p : `${password}`
