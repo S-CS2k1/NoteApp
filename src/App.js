@@ -29,13 +29,13 @@ function App() {
     await axios({
       method : "post",
       url : "https://css-note-app.herokuapp.com/",
+      data : {},
+      withCredentials: true,
       hearders : {
         "Access-Control-Allow-Origin" : "https://css-note-app.herokuapp.com",
         "Access-Control-Allow-Credentials" : true,
         "Content-Type" : "application/json"
       }, 
-      withCredentials: true,
-      data : {}
     })
     .then((ob)=>{
       console.log(ob.data);
