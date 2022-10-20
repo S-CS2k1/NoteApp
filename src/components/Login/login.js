@@ -14,7 +14,7 @@ const Login = (prop)=>{
         const fetchData = async()=>{
             await axios({
                 method: "post",
-                url: "https://css-note-app.herokuapp.com/login",
+                url: "/login",
                 headers: {
                     "Access-Control-Allow-Origin" : "https://css-note-app.herokuapp.com",
                     "Access-Control-Allow-Credentials" : true,
